@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Doblaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="text-center">Mi Portafolio de Doblaje</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><button>Hola</button></li>
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about" class="section bg-white">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <p class="text-lg">Hola, soy [Tu Nombre], un profesional de doblaje con experiencia en [detalles sobre tu experiencia].</p>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="section bg-gray-50">
+            <div class="container">
+                <h2 class="section-title">Portafolio</h2>
+                <div class="portfolio-item">
+                    <h3 class="portfolio-title">Proyecto 1</h3>
+                    <audio controls class="audio-control">
+                        <source src="audio/proyecto1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                    <p class="text-lg">Descripción del proyecto 1.</p>
+                </div>
+                <!-- Añade más elementos de portafolio aquí -->
+            </div>
+        </section>
+        
+        <section id="contact" class="section bg-white">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <form action="submit_form.php" method="post" class="form">
+                    <label for="name" class="form-label">Nombre:</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                    
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                    
+                    <label for="message" class="form-label">Mensaje:</label>
+                    <textarea id="message" name="message" required class="form-textarea"></textarea>
+                    
+                    <button type="submit" class="form-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mi Portafolio de Doblaje. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
